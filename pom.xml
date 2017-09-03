@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>de.bildschirmarbeiter.application.osgi</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
 
   <name>Bildschirmarbeiter Application OSGi</name>
   <description>${project.name}</description>
@@ -21,7 +21,7 @@
     <connection>scm:git:git://github.com/bildschirmarbeiter/de.bildschirmarbeiter.application.osgi.git</connection>
     <developerConnection>scm:git:git@github.com:bildschirmarbeiter/de.bildschirmarbeiter.application.osgi.git</developerConnection>
     <url>https://github.com/bildschirmarbeiter/de.bildschirmarbeiter.application.osgi/tree/master</url>
-    <tag>de.bildschirmarbeiter.application.osgi-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
