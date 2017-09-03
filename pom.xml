@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.bildschirmarbeiter.application</groupId>
+    <artifactId>application-parent</artifactId>
+    <version>1</version>
+  </parent>
+
+  <artifactId>de.bildschirmarbeiter.application.osgi</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>Bildschirmarbeiter Application OSGi</name>
+  <description>${project.name}</description>
+
+  <url>https://github.com/bildschirmarbeiter/de.bildschirmarbeiter.application.osgi</url>
+
+  <scm>
+    <connection>scm:git:git://github.com/bildschirmarbeiter/de.bildschirmarbeiter.application.osgi.git</connection>
+    <developerConnection>scm:git:git@github.com:bildschirmarbeiter/de.bildschirmarbeiter.application.osgi.git</developerConnection>
+    <url>https://github.com/bildschirmarbeiter/de.bildschirmarbeiter.application.osgi/tree/master</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <!-- OSGi -->
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <!-- jsr305 -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>
