@@ -33,7 +33,7 @@ public abstract class OsgiApplication extends Application {
         final BundleContext context = framework.getBundleContext();
         final List<Bundle> bundles = new ArrayList<>();
         for (final String path : bundles()) {
-            final String url = String.format("file:%s", path);
+            final String url = String.format("reference:file:%s", path);
             final Bundle bundle = context.installBundle(url);
             bundles.add(bundle);
         }
