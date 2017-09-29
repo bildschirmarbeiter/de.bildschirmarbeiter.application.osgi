@@ -18,7 +18,7 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.launch.Framework;
 import org.osgi.framework.launch.FrameworkFactory;
 
-public class OsgiApplication extends Application {
+public abstract class OsgiApplication extends Application {
 
     protected FrameworkFactory frameworkFactory;
 
