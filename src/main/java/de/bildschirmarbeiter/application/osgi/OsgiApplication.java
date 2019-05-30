@@ -8,11 +8,10 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.ServiceLoader;
 
-import javax.annotation.Nonnull;
-
 import javafx.application.Application;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import org.jetbrains.annotations.NotNull;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.launch.Framework;
@@ -56,22 +55,22 @@ public abstract class OsgiApplication extends Application {
         super.stop();
     }
 
-    @Nonnull
+    @NotNull
     protected Map<String, String> configuration() {
         return Collections.emptyMap();
     }
 
-    @Nonnull
+    @NotNull
     protected List<String> bundles() {
         return Collections.emptyList();
     }
 
-    @Nonnull
+    @NotNull
     protected Long timeout() {
         return 1000L;
     }
 
-    protected void readLines(@Nonnull final InputStream inputStream, @Nonnull final List<String> list) {
+    protected void readLines(@NotNull final InputStream inputStream, @NotNull final List<String> list) {
         final Scanner scanner = new Scanner(inputStream);
         while (scanner.hasNextLine()) {
             final String line = scanner.nextLine().trim();
